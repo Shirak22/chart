@@ -1,0 +1,117 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body {
+
+    background-color: #f7e9dc;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card {
+   min-width: 400px;
+    margin: 0 auto  ;
+    font-family: sans-serif;
+}
+.card_body {
+    background-color: #fffcf7;
+    border-radius: 1rem 1rem 0 0;
+    padding:0 2rem;
+    border-radius: 1rem;
+}
+.card_body h3{
+    padding: 1rem 0;
+}
+.bar_canvas{
+    background-color: #fffcf7;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end ;
+    justify-content: space-around;
+    gap: .8rem;
+    height: 12rem;
+    padding: 2rem 0;
+}
+
+.bar_canvas > aside {
+    background-color: #ec755d;
+    height:var(--i);
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    border-radius: .2rem;
+    position: relative;
+}
+
+.bar_canvas > aside:hover {
+    background-color: #b4dfe5;
+}
+.bar_canvas > aside:hover::after {
+    content: var(--price);
+    color: #b4dfe5;
+    padding: .1rem;
+    text-align: center;
+    width:100%;
+    background: black;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    font-size: .8rem;
+    transform: translate(-50%,-2rem);
+}
+.bar_canvas > aside p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    transform: translate(-50%,1.2rem);
+
+}
+
+.card_footer{
+    background-color: #fffcf7;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 2rem 0;
+    border-top: .1rem solid #ec755d;
+
+}
+
+.card_footer_total > p {
+    font-size: .8rem;
+    text-align: center;
+    margin:0;
+} 
+.card_footer_total > h1 {
+    font-size: 1.8rem;
+    margin:0;
+} 
+
+.card_footer_lastmonth > h4,p {
+    margin:0;
+    text-align: right;
+}
+.card_header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ec755d;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+.card_header_balance :where(p,h3) {
+    color: #fffcf7;
+    margin: 0;
+    text-align: left;
+}
+.card_header_balance p {
+    font-size: .8rem;
+}
+.card_header_balance h3 {
+    font-size: 1.2rem;
+}
