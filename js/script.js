@@ -34,7 +34,7 @@ const process = async ()=> {
 
 process();
 
-// convert the values to css style height 
+// convert the values to css style height - max-height: 12rem
 const getBarHeight = (BiggestValue, value) => {
     return (12 * value) / BiggestValue ;
 }
@@ -47,5 +47,3 @@ const getTotalSpending = (data) => {
 
     return total;
 }
-// 12rem =  biggest 
-// x = vale
