@@ -32,10 +32,15 @@ body {
     align-items: flex-end ;
     justify-content: space-around;
     gap: .8rem;
-    height: 12rem;
-    padding: 2rem 0;
+    height: 10rem;
+    padding: 0 0 2rem 0;
 }
 
+
+
+.bar_canvas > aside:hover {
+    background-color: #b4dfe5;
+}
 .bar_canvas > aside {
     background-color: #ec755d;
     height:var(--i);
@@ -45,15 +50,13 @@ body {
     border-radius: .2rem;
     position: relative;
     animation: rise .5s .1s ease-out forwards;
+
 }
 
-.bar_canvas > aside:hover {
-    background-color: #b4dfe5;
-}
 .bar_canvas > aside:hover::after {
     content: var(--price);
     color: #b4dfe5;
-    padding: .1rem;
+    padding: .4rem;
     text-align: center;
     width:100%;
     background: black;

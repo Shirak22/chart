@@ -36,7 +36,7 @@ process();
 
 // convert the values to css style height - max-height: 12rem
 const getBarHeight = (BiggestValue, value) => {
-    return (12 * value) / BiggestValue ;
+    return (10 * value) / BiggestValue ;
 }
 
 const getTotalSpending = (data) => {
